@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="demo">
+    demo
+  </div>
+
+  <script>
+
+    let car=["Tesla","Toyota","BMW","Hyundai","KIA"];
+    console.log(car);
+    car[4]="Nio";
+
+    car.push("Nicola");
+
+    // document.getElementById('demo').innerHTML=car[0];
+    // document.getElementById('demo').innerHTML=car[4];
+    // document.getElementById('demo').innerHTML=car;
+
+    // for(i=0; i<car.length; i++){
+    //   console.log(car[i]);
+    // }
+
+    car.forEach(function(a,b,c){
+      console.log(a);
+      // console.log(b);
+      // console.log(c);
+    });
+
+    let p1=new Array(10);
+    let p2=[10,20,30,40,50];
+
+    console.log(p1);
+    console.log(p2);
+
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    var obj_fruit={
+      name:"Car1",
+      age:30
+    }
+    console.log(fruits);
+    console.log(obj_fruit);
+    console.log(typeof fruits);
+    console.log(typeof obj_fruit);
+    console.log(Array.isArray(fruits));
+    console.log(fruits instanceof Array);
+
+    console.log(Array.isArray(obj_fruit));
+    console.log(obj_fruit instanceof Array);
+
+
+
+  </script>
+  
+</body>
+</html>

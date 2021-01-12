@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    let fruits = ["Banana", "Orange", "Apple", "Mango"];
+    console.log(fruits);
+    console.log(fruits.toString());
+    console.log(fruits.join(" "));
+
+    fruits.pop();
+    fruits.pop();
+    console.log(fruits);
+
+    fruits.push("Kiwi");
+    console.log(fruits);
+
+    fruits.shift();
+    console.log(fruits);
+
+    fruits.push("Watermelon");
+    fruits.push("Cherry");
+    console.log(fruits);
+
+    // fruits.pop();
+    // console.log(fruits);
+
+    console.log(fruits.unshift("Lemon"));
+    console.log(fruits);
+
+
+    let girls=["Jenny","Kelly"];
+    let boys=["Colby","Conor"];
+
+    let children=girls.concat(boys);
+    console.log(children);
+
+
+    let arr1=["Tesla"];
+    let arr2=["BMW"];
+    let arr3=["Xiaofeng"];
+
+    let arr4=arr1.concat(arr2,arr3);
+    console.log(arr4);
+
+
+  </script>
+  
+</body>
+</html>

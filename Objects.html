@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <p id="demo">
+    demo
+  </p>
+
+  <button onclick="displayDate()">버튼</button>
+
+  <script>
+
+    let car={
+      type: "SUV",
+      model: "Model Y",
+      color: "white"
+    }
+
+    console.log(car);
+
+    console.log("차의 타입은 "+car.type+"이고 차의 모델은 "+car.model+"이고 차의 색깔은 "+car.color+"입니다.");
+    console.log(car.type);
+    console.log(car["type"]);
+
+
+    let person={
+      firstName: "Cody",
+      lastName: "Garbrandt",
+      id: 5566,
+      fullName: function(){
+        return this.firstName+" "+this.lastName;
+      }  
+    }
+
+    console.log(person);
+    console.log(person.fullName());
+
+    var x=new String();
+    var y=new Number();
+    var z=new Boolean();
+
+    console.log(x);
+    console.log(y);
+    console.log(z);
+
+  
+    function displayDate(){
+      document.getElementById('demo').innerHTML=Date();
+    }
+
+  </script>
+  
+</body>
+</html>
