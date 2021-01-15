@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    let txt="";
+    let num=[45,4,9,16,25];
+    // console.log(num);
+
+    num.forEach(function(a,b,c){
+      txt=txt+a+" ";
+    })
+
+    // console.log(txt);
+
+    // let num_map=num.map(function(a,b,c){
+    //   return a*2;
+    // });
+    // console.log(num_map);
+
+    // let num_map2=num.map(function(a,b,c){
+    //   return a*3;
+    // });
+    // console.log(num_map2);
+
+    // let num_filter=num.filter(function(a,b,c){
+    //   return a<18;
+    // });
+    // console.log(num_filter);
+
+    // let num_some=num.some(function(a,b,c){
+    //   return a>18;
+    // });
+    // console.log(num_some);
+
+
+    // let fruits = ["Apple", "Orange", "Apple", "Mango"];
+    // console.log(fruits.indexOf('Orange'));
+
+    let my_num=[4,9,16,25,29];
+    console.log(my_num);
+
+    let num_find2=my_num.find(function(a,b,c){
+      return a>22;
+    })
+    console.log(num_find2);
+
+    let num_find3=my_num.findIndex(function(a,b,c){
+      return a>22;
+    })
+    console.log(num_find3);
+    
+
+
+  </script>
+  
+</body>
+</html>
